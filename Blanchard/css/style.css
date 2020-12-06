@@ -73,7 +73,7 @@ img {
     display: flex;
     align-items: center;
    margin-left: 179px;
-   margin-right: 217px;
+   
 }
 .first-items {
     display: flex;
@@ -85,7 +85,9 @@ img {
     font-weight: 600; 
     text-decoration: none;
 }
-
+.first-item:last-child {
+margin-right: 0;
+}
 .items-link{
     font-size: 18px;
     line-height: 24px;
@@ -98,6 +100,7 @@ img {
     
     display: flex;
     align-items: center;
+    margin-left: auto;
    
 }
 .login-link {
@@ -184,3 +187,59 @@ img {
 input[type="search"]::placeholder {
    color: #ffffff;
 }
+.swiper-container {
+    width: 100%;
+    height: 800px;
+    margin-top: -77px;
+    z-index: -1;
+}
+.swiper-slide.hero {
+    background-image: url("../img/birmingham.jpg");
+}
+.swiper-slide.swiper-sliders {
+    background-image: url("../img/museums.jpg");
+}
+.swiper-slide.swiper-slids {
+    background-image: url("../img/trust.jpg");
+}
+     .swiper-slide {
+         background-size: cover;
+     }
+     .swiper-button-prev::after,
+     .swiper-button-next::after {
+        color: #fff;
+        font-size: 40px;
+     }
+    .swiper-pagination .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        background-color: #FFFFFF;
+    }
+    .hero-title {
+        margin-top: 200px;
+        font-size: 72px;
+        line-height: 82px;
+        font-weight: 700;
+        color: #ffffff;
+        max-width: 600px;
+        margin-bottom: 0;
+    }
+    .descriptions {
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 700;
+        max-width: 600px;
+        margin-top: 1px;
+    }
+    .first-btn {
+        margin-top: 92px;
+        padding: 22px 35px;
+        background-color: #9D5CD0;
+        border-radius: 100px;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #ffffff;
+        border: none;
+    }
