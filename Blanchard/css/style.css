@@ -189,17 +189,17 @@ input[type="search"]::placeholder {
 }
 .swiper-container {
     width: 100%;
-    height: 800px;
+    height: 630px;
     margin-top: -77px;
     z-index: -1;
 }
 .swiper-slide.hero {
     background-image: url("../img/birmingham.jpg");
 }
-.swiper-slide.swiper-sliders {
+.swiper-slide.muzey {
     background-image: url("../img/museums.jpg");
 }
-.swiper-slide.swiper-slids {
+.swiper-slide.trust {
     background-image: url("../img/trust.jpg");
 }
      .swiper-slide {
@@ -216,7 +216,7 @@ input[type="search"]::placeholder {
         background-color: #FFFFFF;
     }
     .hero-title {
-        margin-top: 200px;
+        margin-top: 163px;
         font-size: 72px;
         line-height: 82px;
         font-weight: 700;
