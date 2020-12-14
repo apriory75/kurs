@@ -1,6 +1,6 @@
 const slider = document.querySelector('.swiper-container');
 const slider1 = document.querySelector('.swiper-container1');
-const slider2 = document.querySelector('.swiper-container2');
+
 const slider3 = document.querySelector('.swiper-container3');
 const slider4 = document.querySelector('.swiper-container4');
 let mySwiper = new Swiper(slider, {  
@@ -33,6 +33,14 @@ let mySwiper = new Swiper(slider, {
         320: {
           slidesPerView: 2,
           spaceBetween: 20
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 35
         },
         // when window width is >= 480px
         1200: {
@@ -71,62 +79,30 @@ let mySwiper = new Swiper(slider, {
   breakpoints: {
     // when window width is >= 320px
     320: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 20
     },
-    // when window width is >= 480px
-    920: {
+    768: {
       slidesPerView: 2,
       spaceBetween: 30
     },
-    // when window width is >= 640px
     1024: {
       slidesPerView: 2,
-      spaceBetween: 30
-    },
-    1600: {
-      slidesPerView: 3,
-      spaceBetween: 50
-    }
-  }
-})
-  let mySwiper2 = new Swiper(slider2, {  
-    slidesPerView: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 50,
-        
-          clickable: true,
-          slideToClickedSlide: true,
-         
-    
-          autoplay: {
-            delay: 5000,
-          },
-  loop: true,
-  
-    
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20
-    },
-    // when window width is >= 480px
-    920: {
-      slidesPerView: 3,
       spaceBetween: 35
     },
-    // when window width is >= 640px
+    // when window width is >= 480px
     1200: {
-      slidesPerView: 3,
-      spaceBetween: 40
+      slidesPerView: 2,
+      spaceBetween: 30
     },
+    // when window width is >= 640px
     1600: {
       slidesPerView: 3,
       spaceBetween: 50
     }
   }
 })
+  
   let mySwiper3 = new Swiper(slider3, {  
     slidesPerView: 3,
         slidesPerGroup: 1,
@@ -147,8 +123,8 @@ let mySwiper = new Swiper(slider, {
     //   },
     breakpoints: {
       // when window width is >= 320px
-      320: {
-        slidesPerView: 1,
+      768: {
+        slidesPerView: 2,
         spaceBetween: 20
       },
       // when window width is >= 480px
@@ -201,7 +177,7 @@ let mySwiper = new Swiper(slider, {
       },
       1600: {
         slidesPerView: 3,
-        spaceBetween: 50
+        spaceBetween: 57
       }
     }
   })
@@ -215,7 +191,7 @@ let mySwiper = new Swiper(slider, {
     $( "#accordion" ).accordion({
         active: true,
       collapsible: true,
-      
+      heightStyle: "content"
     });
     $( ".selector" ).accordion( "refresh" );
   } );
@@ -254,7 +230,7 @@ $( ".selector" ).on( "accordioncreate", function( event, ui ) {} );
         ),
 
         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Собственный значок метки',
+            hintContent: 'Шоурум №4',
             balloonContent: 'Это красивая метка'
         }, {
             // Опции.
@@ -270,24 +246,8 @@ $( ".selector" ).on( "accordioncreate", function( event, ui ) {} );
         }),
 
         myPlacemarkWithContent = new ymaps.Placemark([55.75846306898368,37.601079499999905], {
-            hintContent: 'Собственный значок метки с контентом',
-            balloonContent: 'А эта — новогодняя',
-            iconContent: '12'
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#imageWithContent',
-            // Своё изображение иконки метки.
-            iconImageHref: 'img/metka.svg',
-            // Размеры метки.
-            iconImageSize: [48, 48],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-24, -24],
-            // Смещение слоя с содержимым относительно слоя с картинкой.
-            iconContentOffset: [15, 15],
-            // Макет содержимого.
-            iconContentLayout: MyIconContentLayout
+            
+        
         });
 
     myMap.geoObjects
@@ -295,3 +255,70 @@ $( ".selector" ).on( "accordioncreate", function( event, ui ) {} );
         .add(myPlacemarkWithContent);
 myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)'
         }
+        
+        var selector = document.querySelector("input[type='tel']");
+        var im = new Inputmask("+7 (999) 999-99-99");
+
+        im.mask(selector);
+        
+        new JustValidate('.form', {
+            rules: {
+               name: {
+                required: true,
+                minLength: 2,
+                maxLength: 10
+              },
+              tel: {
+                required: true,
+                function: (name, value) => {
+                    const phone = selector.Inputmask.unmaskedvalue()
+                    return Number(phone) && phone.length === 10
+                }
+              },
+
+              mail: {
+                required: true,
+                email: true
+              },
+            },
+        });
+        Share = {
+          vkontakte: function(purl, ptitle, pimg, text) {
+            url  = 'http://vkontakte.ru/share.php?';
+            url += 'url='          + encodeURIComponent(purl);
+            url += '&title='       + encodeURIComponent(ptitle);
+            url += '&description=' + encodeURIComponent(text);
+            url += '&image='       + encodeURIComponent(pimg);
+            url += '&noparse=true';
+            Share.popup(url);
+          },
+          facebook: function(purl, ptitle, pimg, text) {
+            url  = 'http://www.facebook.com/sharer.php?s=100';
+            url += '&p[title]='     + encodeURIComponent(ptitle);
+            url += '&p[summary]='   + encodeURIComponent(text);
+            url += '&p[url]='       + encodeURIComponent(purl);
+            url += '&p[images][0]=' + encodeURIComponent(pimg);
+            Share.popup(url);
+          },
+          instagram: function(purl, ptitle, pimg, text) {
+            url  = 'http://instagram.com/###?ref=badge';
+            url += '&p[title]='     + encodeURIComponent(ptitle);
+            url += '&p[summary]='   + encodeURIComponent(text);
+            url += '&p[url]='       + encodeURIComponent(purl);
+            url += '&p[images][0]=' + encodeURIComponent(pimg);
+            Share.popup(url);
+          },
+          popup: function(url) {
+            window.open(url,'','toolbar=0,status=0,width=626,height=436');
+          }
+        };
+        $(document).ready(function() {
+          $("a.items-link").click(function() {
+            var elementClick = $(this).attr("href")
+            var destination = $(elementClick).offset().top;
+            jQuery("html:not(:animated),body:not(:animated)").animate({
+              scrollTop: destination
+            }, 1600);
+            return false;
+          });
+        });
