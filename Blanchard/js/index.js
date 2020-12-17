@@ -322,3 +322,6 @@ myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)'
             return false;
           });
         });
+        function l_image (a) {
+          document.artist_img.src = a;
+      }
