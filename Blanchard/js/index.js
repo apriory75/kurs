@@ -181,12 +181,14 @@ let mySwiper = new Swiper(slider, {
       }
     }
   })
+  // selekt
   const element = document.querySelector('#selectCustom');
   const choices = new Choices(element, {
 
   searchEnabled: false,
    
   });
+  // accordion
   $( function() {
     $( "#accordion" ).accordion({
         active: true,
@@ -207,6 +209,7 @@ $( ".selector" ).accordion( "option", "classes.ui-accordion", "highlight" );
   $( ".selector" ).accordion({
   create: function( event, ui ) {}
 });
+// yandex maps
 $( ".selector" ).on( "accordioncreate", function( event, ui ) {} );
     // Функция ymaps.ready() будет вызвана, когда
         // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
@@ -255,7 +258,7 @@ $( ".selector" ).on( "accordioncreate", function( event, ui ) {} );
         .add(myPlacemarkWithContent);
 myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)'
         }
-        
+        // validation
         var selector = document.querySelector("input[type='tel']");
         var im = new Inputmask("+7 (999) 999-99-99");
 
@@ -282,6 +285,7 @@ myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)'
               },
             },
         });
+        // socsety
         Share = {
           vkontakte: function(purl, ptitle, pimg, text) {
             url  = 'http://vkontakte.ru/share.php?';
@@ -312,8 +316,9 @@ myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)'
             window.open(url,'','toolbar=0,status=0,width=626,height=436');
           }
         };
+        // плавный скролл
         $(document).ready(function() {
-          $("a.items-link").click(function() {
+          $("a.header-first_nav-menu-list-link").click(function() {
             var elementClick = $(this).attr("href")
             var destination = $(elementClick).offset().top;
             jQuery("html:not(:animated),body:not(:animated)").animate({
@@ -322,6 +327,7 @@ myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)'
             return false;
           });
         });
+
         function l_image (a) {
           document.artist_img.src = a;
       }
