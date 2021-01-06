@@ -1,63 +1,59 @@
 const slider = document.querySelector('.swiper-container');
 const slider1 = document.querySelector('.swiper-container1');
+const slider2 = document.querySelector('.swiper-container2');
 
 const slider3 = document.querySelector('.swiper-container3');
 const slider4 = document.querySelector('.swiper-container4');
-let mySwiper = new Swiper(slider, {  
-    
-        pagination: {
-          el: '.pag-1',
-          type: 'fraction',
-          clickable: true,
-          slideToClickedSlide: true,
-    },
-  loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    // autoplay: {
-    //     delay: 5000,
-    //   },
-    slidesPerView: 3,
-    slidesPerGroup: 3,
-    spaceBetween: 50,
+let mySwiper1 = new Swiper(slider1, {  
+  slidesPerView: 3,
+  slidesPerGroup: 1,
+  spaceBetween: 50,
+  
    
-      // Default parameters
-      slidesPerView: 3,
-    slidesPerGroup: 3,
-    spaceBetween: 50,
-      // Responsive breakpoints
-      breakpoints: {
-        // when window width is >= 320px
-        320: {
-          slidesPerView: 2,
-          spaceBetween: 20
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 30
-        },
-        1024: {
-          slidesPerView: 2,
-          spaceBetween: 35
-        },
-        // when window width is >= 480px
-        1200: {
-          slidesPerView: 2,
-          spaceBetween: 30
-        },
-        // when window width is >= 640px
-        1600: {
-          slidesPerView: 3,
-          spaceBetween: 50
-        }
-      }
-   
+    pagination: {
+      el: '.pag-1',
+      type: 'fraction',
+      clickable: true,
+      slideToClickedSlide: true,
+},
+  //   autoplay: {
+  //     delay: 5000,
+  //   },
+loop: true,
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+
+breakpoints: {
+// when window width is >= 320px
+320: {
+slidesPerView: 2,
+spaceBetween: 20
+},
+768: {
+slidesPerView: 2,
+spaceBetween: 30
+},
+1024: {
+slidesPerView: 2,
+spaceBetween: 35
+},
+// when window width is >= 480px
+1400: {
+slidesPerView: 2,
+spaceBetween: 50
+},
+// when window width is >= 640px
+1690: {
+slidesPerView: 3,
+spaceBetween: 50
+}
+}
 })
-  let mySwiper1 = new Swiper(slider1, {  
+  let mySwiper2 = new Swiper(slider2, {  
     slidesPerView: 3,
-        slidesPerGroup: 3,
+        slidesPerGroup: 1,
         spaceBetween: 50,
         
          
@@ -91,12 +87,12 @@ let mySwiper = new Swiper(slider, {
       spaceBetween: 35
     },
     // when window width is >= 480px
-    1200: {
+    1400: {
       slidesPerView: 2,
-      spaceBetween: 30
+      spaceBetween: 50
     },
     // when window width is >= 640px
-    1600: {
+    1690: {
       slidesPerView: 3,
       spaceBetween: 50
     }
@@ -133,11 +129,11 @@ let mySwiper = new Swiper(slider, {
         spaceBetween: 45
       },
       // when window width is >= 640px
-      1200: {
+      1600: {
         slidesPerView: 2,
         spaceBetween: 50
       },
-      1600: {
+      1700: {
         slidesPerView: 3,
         spaceBetween: 50
       }
@@ -331,3 +327,19 @@ myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)'
         function l_image (a) {
           document.artist_img.src = a;
       }
+      document.querySelector('#burger').addEventListener('click', function(){
+        document.querySelector('#menu').classList.toggle('is-active')
+   
+        })
+      
+       $( document ).ready(function() {
+   
+   
+           $( ".menu" ).hide();
+           $( ".burger" ).click(function() {
+           $( ".menu" ).slideToggle( "slow", function() {
+           
+           
+           });
+           });
+           });

@@ -18,7 +18,32 @@
    <header class="header">
        <div class="header-first">
            <div class="container header-first_container">
-            <a href="/" class="header-first_banner"><img src="img/logo.png" alt="logo" class="header-first_logo"></a>
+            <div id="menu" class="menu is-active">
+                <ul class="menu-list">
+                <li class="menu-item">
+                <a href="/" class="menu-item-link">О нас</a>
+                </li>
+                <li class="menu-item">
+                <a href="/" class="menu-item-link">Проекты</a>
+                </li>
+                <li class="menu-item">
+                <a href="/" class="menu-item-link">Этапы</a>
+                </li>
+                <li class="menu-item">
+                <a href="/" class="menu-item-link">Отзывы</a>
+                </li>
+                <li class="menu-item">
+                 <a href="/" class="menu-item-link">Контакты</a>
+                </li>
+                </ul>
+                </div>
+                 <div id="burger" tabindex="0" aria-label="Меню" class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                </div>
+                <button aria-label="Поиск по сайту" type="submit" class="header-hide_search-btn"></button>
+            <h1 class="header-first_logo-title"><a href="/" class="header-first_banner"></a></h1>
             
             <nav class="header-first_nav">
 
@@ -59,7 +84,9 @@
                 <ul class="header-second_menu">
                     <li class="header-second_menu-list">
                        
-                        <a class="header-second_menu-link" href="javascript:void(0);" tabindex="0">Реализм<span class="header-second_menu-list_inf-btn"></span></a>
+                        <a class="header-second_menu-link" href="javascript:void(0);" tabindex="0">Реализм<span class="header-second_menu-list_inf-btn">
+                    
+                        </span></a>
     
                             <ul data-simplebar class="dropdown_block drop-list customScroll">
                                 
@@ -124,8 +151,10 @@
                 <input type="search" placeholder="Поиск по сайту" class="header-second-search">
 
             </form>
+           
         </div>
     </div>
+   
    </header> 
 <main>
     <section class="hero">
@@ -146,7 +175,7 @@
     </section>
     <section class="about">
         <div class="container">
-            <h1 class="about-title" ><a id="about"></a>О нас</h1>
+            <h2 class="about-title" ><a id="about"></a>О нас</h2>
             <p class="about-text">
                 Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет
                 каждого участника как способного принимать собственные решения касаемо распределения внутренних
@@ -186,7 +215,7 @@
                     <div class="swiper-pagination pag-1"></div>
                     <button class="swiper-button-next"></button>
                 </div>
-                <div class="swiper-container">
+                <div class="swiper-container1">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide sly-a"></div>
                         <div class="swiper-slide sly-b"></div>
@@ -205,7 +234,7 @@
                         <div class="swiper-slide slider15"></div>
                     </div>
                 </div>
- <div class="swiper-container1">
+ <div class="swiper-container2">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slider16"></div>
                         <div class="swiper-slide slider17"></div>
@@ -547,7 +576,7 @@
 
                     <div class="swiper-wrapper">
                         <div class="swiper-slide card">
-                            <img src="img/111.png" alt="Обложка" class="publish-img">
+                            <img src="img/111.png" alt="Обложка" class="publish-block_img">
                             <div class="publish-block_list">
                                 <div class="card-block"><span class="card-item">Искусство цвета</span> <span
                                         class="card-price">620 руб</span></div>
