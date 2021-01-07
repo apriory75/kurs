@@ -335,9 +335,9 @@ myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)'
        $( document ).ready(function() {
    
    
-           $( ".menu" ).hide();
-           $( ".burger" ).click(function() {
-           $( ".menu" ).slideToggle( "slow", function() {
+           $( ".header-first__menu" ).hide();
+           $( ".header-first__burger" ).click(function() {
+           $( ".header-first__menu" ).slideToggle( "slow", function() {
            
            
            });
