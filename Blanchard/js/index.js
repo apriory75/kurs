@@ -314,7 +314,7 @@ myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)'
         };
         // плавный скролл
         $(document).ready(function() {
-          $("a.header-first_nav-menu-list-link").click(function() {
+          $("a.header-first__list-link").click(function() {
             var elementClick = $(this).attr("href")
             var destination = $(elementClick).offset().top;
             jQuery("html:not(:animated),body:not(:animated)").animate({
@@ -323,7 +323,16 @@ myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)'
             return false;
           });
         });
-
+        $(document).ready(function() {
+          $("a.hero__first-btn").click(function() {
+            var elementClick = $(this).attr("href")
+            var destination = $(elementClick).offset().top;
+            jQuery("html:not(:animated),body:not(:animated)").animate({
+              scrollTop: destination
+            }, 1600);
+            return false;
+          });
+        });
         function l_image (a) {
           document.artist_img.src = a;
       }
