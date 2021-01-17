@@ -8,7 +8,11 @@ let mySwiper1 = new Swiper(slider1, {
   slidesPerView: 3,
   slidesPerGroup: 1,
   spaceBetween: 50,
-  
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
    
     pagination: {
       el: '.pag-1',
@@ -55,7 +59,11 @@ spaceBetween: 50
     slidesPerView: 3,
         slidesPerGroup: 1,
         spaceBetween: 50,
-        
+        keyboard: {
+          enabled: true,
+          onlyInViewport: false,
+          pageUpDown: true,
+        },
          
           pagination: {
             el: '.pag-1',
@@ -149,12 +157,9 @@ spaceBetween: 50
     
   loop: true,
     navigation: {
-      nextEl: '.pr',
-      prevEl: '.nx',
+      nextEl: '.nx',
+      prevEl: '.pr',
     },
-    // autoplay: {
-    //     delay: 5000,
-    //   },
     breakpoints: {
       // when window width is >= 320px
       320: {
@@ -352,3 +357,15 @@ myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)'
            });
            });
            });
+          //  Табы
+          document.addEventListener('DOMContentLoaded', function() {
+document.querySelectorAll('.catalog__flag-tab').forEach(function(tabsBtn) {
+  tabsBtn.addEventListener('click', function(event) {
+    const path = event.currentTarget.dataset.path
+    document.querySelectorAll('.tab-content').forEach(function(tabContent) {
+      tabContent.classList.remove('tab-content-active')
+    })
+    document.querySelector(`[data-target="${path}"]`).classList.add('tab-content-active')
+  })
+})
+          })
