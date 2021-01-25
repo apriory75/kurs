@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blanchard</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   
     <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <link rel="stylesheet" href="css/choices.min.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -53,11 +55,11 @@
                     </li>
                 </ul>
             </nav>
-            <span class="header-first__login"><a href="/" class="header-first__login-link">
+            <div class="header-first__login" tabindex="0">
                 <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
-                    </svg>
-                   Войти</a></span>
+                    </svg><a href="/" class="header-first__login-link">
+                   Войти</a></div>
            </div>
        </div>
        <div class="header-second">
@@ -66,23 +68,24 @@
                 <ul class="header-second__menu">
                     <li class="header-second__menu-list">
                        
-                        <a class="header-second__menu-link" href="javascript:void(0);" tabindex="0">Реализм<span class="header-second__menu-btn">
+                        <a class="header-second__menu-link" href="javascript:void(0);">Реализм<span class="header-second__menu-btn">
                     
                         </span></a>
     
-                            <ul data-simplebar class="header-second__drop-list customScroll">
+                            <ul data-simplebar2 class="header-second__drop-list" id="myEl">
                             
                               <li class="header-second__drop-list-item" tabindex="0"><a href="/" class="header-second__drop-link">Тинторетто</a></li>
                               <li class="header-second__drop-list-item" tabindex="0"><a href="/" class="header-second__drop-link">Фридрих</a></li>
                               <li class="header-second__drop-list-item" tabindex="0"><a href="/" class="header-second__drop-link">Леонардо</a></li>
                               <li class="header-second__drop-list-item" tabindex="0"><a href="/" class="header-second__drop-link">Верроккьо</a></li>
+                              
                             </ul>
             
                     </li>
                     <li class="header-second__menu-list">
-                        <a class="header-second__menu-link" href="javascript:void(0);" tabindex="0">Импрессионизм<span class="header-second__menu-btn"></span></a>
+                        <a class="header-second__menu-link" href="javascript:void(0);">Импрессионизм<span class="header-second__menu-btn"></span></a>
                      
-                        <ul data-simplebar class="header-second__drop-list customScroll">
+                        <ul data-simplebar2 class="header-second__drop-list" id="myEl1">
                               <li class="header-second__drop-list-item" tabindex="0">Моне</li>
                               <li class="header-second__drop-list-item" tabindex="0">Сислей</li>
                               <li class="header-second__drop-list-item" tabindex="0">Мане</li>
@@ -91,9 +94,9 @@
                         
                     </li>
                     <li class="header-second__menu-list">
-                        <a class="header-second__menu-link" href="javascript:void(0);" tabindex="0">Постимпрессионизм<span class="header-second__menu-btn"></span></a>
+                        <a class="header-second__menu-link" href="javascript:void(0);">Постимпрессионизм<span class="header-second__menu-btn"></span></a>
                        
-                        <ul data-simplebar class="header-second__drop-list customScroll">
+                        <ul data-simplebar2 class="header-second__drop-list" id="myEl2">
                             <li class="header-second__drop-list-item" tabindex="0">Ван Гог</li>
                             <li class="header-second__drop-list-item" tabindex="0">Сезанн</li>
                             <li class="header-second__drop-list-item" tabindex="0">Гоген</li>
@@ -102,9 +105,9 @@
                          
                     </li>
                     <li class="header-second__menu-list">
-                        <a class="header-second__menu-link" href="javascript:void(0);" tabindex="0">Авангард<span class="header-second__menu-btn"></span></a>
+                        <a class="header-second__menu-link" href="javascript:void(0);">Авангард<span class="header-second__menu-btn"></span></a>
                       
-                        <ul data-simplebar class="header-second__drop-list customScroll">
+                        <ul data-simplebar2 class="header-second__drop-list" id="myEl3">
                             <li class="header-second__drop-list-item" tabindex="0">Пикассо</li>
                             <li class="header-second__drop-list-item" tabindex="0">Малевич</li>
                             <li class="header-second__drop-list-item" tabindex="0">Маринетти</li>
@@ -114,9 +117,9 @@
                          
                     </li>
                     <li class="header-second__menu-list">
-                        <a class="header-second__menu-link" href="javascript:void(0);" tabindex="0">Футуризм<span class="header-second__menu-btn"></span></a>
+                        <a class="header-second__menu-link" href="javascript:void(0);">Футуризм<span class="header-second__menu-btn"></span></a>
                        
-                        <ul data-simplebar class="header-second__drop-list customScroll">
+                        <ul data-simplebar2 class="header-second__drop-list" id="myEl4">
                               <li class="header-second__drop-list-item" tabindex="0">Балла</li>
                               <li class="header-second__drop-list-item" tabindex="0">Северини</li>
                               <li class="header-second__drop-list-item" tabindex="0">Прателла</li>
@@ -128,7 +131,7 @@
 
 
             </nav>
-            <form action="/" method="GET" class="header-second__form-submit" tabindex="0">
+            <form action="/" method="GET" class="header-second__form-submit">
                 <button aria-label="Поиск по сайту" type="submit" class="header-second__search-btn"></button>
                 <input type="search" placeholder="Поиск по сайту" class="header-second__search">
 
@@ -141,7 +144,7 @@
 <main>
     <section class="hero">
         <div class="container">
-            <h1 class="hero__h"></h1>
+            <h1 class="visually-hidden"></h1>
             <h2 class="hero__title">Прикоснитесь к прекрасному</h2>
             <p class="hero__descriptions">Мы вынуждены отталкиваться от того, что реализация намеченных плановых
                 заданий создаёт предпосылки для новых предложений.</p>
@@ -754,5 +757,6 @@
 <script src="js/just-validate.min.js"></script>
 <script src="js/choices.min.js"></script>
 <script src="js/index.js"></script>
+<script src="js/simplebar.js"></script>
 </body>
 </html>

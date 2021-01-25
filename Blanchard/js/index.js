@@ -1,3 +1,4 @@
+
 const slider = document.querySelector('.swiper-container');
 const slider1 = document.querySelector('.swiper-container1');
 const slider2 = document.querySelector('.swiper-container2');
@@ -368,4 +369,5 @@ document.querySelectorAll('.catalog__flag-tab').forEach(function(tabsBtn) {
     document.querySelector(`[data-target="${path}"]`).classList.add('tab-content-active')
   })
 })
-          })
+          });
+        
