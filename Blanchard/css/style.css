@@ -122,7 +122,7 @@ img {
 .header-first__container {
     display: flex;
     align-items: center;
-    padding-top: 26px;
+    padding-top: 29px;
     padding-bottom: 31px;
   
 }
@@ -350,11 +350,11 @@ img {
     background-image: url("../img/loop.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 21px;
-    height: 21px;
+    width: 22px;
+    height: 22px;
     border: none;
     background-color: transparent;
-   margin-right: 13px;
+   margin-right: 12px;
    outline: none;
    transition: background-image 0.5s ease; 
 }
@@ -411,7 +411,7 @@ input[type="search"]::placeholder {
 
  .hero {
      width: 100%;
-     margin-bottom: 80px;
+     margin-bottom: 82px;
  }
  .visually-hidden {
     position: absolute;
@@ -427,11 +427,11 @@ input[type="search"]::placeholder {
     margin: 0;
     padding-top: 71px;
     font-size: 72px;
-    line-height: 82px;
+    line-height: 83px;
     font-weight: 700;
     color: #ffffff;
     max-width: 600px;
-    margin-bottom: 0;
+    margin-bottom: 19px;
     }
     .hero__descriptions {
     color: #ffffff;
@@ -439,25 +439,25 @@ input[type="search"]::placeholder {
     line-height: 30px;
     font-weight: 700;
     max-width: 600px;
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 115px;
     }
     .hero__first-btn {
         max-width: 315px;
-    padding: 22px 35px;
+    padding: 20px 33px;
     background-color: var(--font-color);
     border-radius: 100px;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 22px;
     font-weight: 700;
     color: #ffffff;
-    border: none;
+    border: 3px solid transparent;
     outline: none;
-   
+   transition: border .5s ease;
     }
     .hero__first-btn:focus {
         border: 3px solid #D1A9F0;
-       
+        transition: border .5s ease;
     }
     .hero__first-btn:hover {
         border: 3px solid #7943A4;
@@ -540,7 +540,7 @@ font-size: 48px;
 line-height: 65px;
 font-weight: 400;
 color: #333333;
-margin-bottom: 18px;
+margin-bottom: 14px;
     }
     .about__text {
         margin: 0;
@@ -549,7 +549,7 @@ font-weight: 400;
 max-width: 65%;
     }
     .about {
-        margin-bottom: 68px;
+        margin-bottom: 70px;
     }
     .gallery {
         background-image: url("../img/MK.png");
