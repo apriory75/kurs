@@ -55,11 +55,11 @@
                     </li>
                 </ul>
             </nav>
-            <div class="header-first__login" tabindex="0">
+            <a href="/" class="header-first__login-link header-first__login">
                 <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
-                    </svg><a href="/" class="header-first__login-link">
-                   Войти</a></div>
+                    </svg>
+                   Войти</a>
            </div>
        </div>
        <div class="header-second">
@@ -68,7 +68,7 @@
                 <ul class="header-second__menu">
                     <li class="header-second__menu-list">
                        
-                        <a class="header-second__menu-link" href="javascript:void(0);">Реализм<span class="header-second__menu-btn">
+                        <a class="header-second__btn" href="javascript:void(0);">Реализм<span class="header-second__menu-btn">
                     
                         </span></a>
     
@@ -83,7 +83,7 @@
             
                     </li>
                     <li class="header-second__menu-list">
-                        <a class="header-second__menu-link" href="javascript:void(0);">Импрессионизм<span class="header-second__menu-btn"></span></a>
+                        <a class="header-second__btn" href="javascript:void(0);">Импрессионизм<span class="header-second__menu-btn"></span></a>
                      
                         <ul data-simplebar2 class="header-second__drop-list" id="myEl1">
                               <li class="header-second__drop-list-item" tabindex="0">Моне</li>
@@ -94,7 +94,7 @@
                         
                     </li>
                     <li class="header-second__menu-list">
-                        <a class="header-second__menu-link" href="javascript:void(0);">Постимпрессионизм<span class="header-second__menu-btn"></span></a>
+                        <a class="header-second__btn" href="javascript:void(0);">Постимпрессионизм<span class="header-second__menu-btn"></span></a>
                        
                         <ul data-simplebar2 class="header-second__drop-list" id="myEl2">
                             <li class="header-second__drop-list-item" tabindex="0">Ван Гог</li>
@@ -105,7 +105,7 @@
                          
                     </li>
                     <li class="header-second__menu-list">
-                        <a class="header-second__menu-link" href="javascript:void(0);">Авангард<span class="header-second__menu-btn"></span></a>
+                        <a class="header-second__btn" href="javascript:void(0);">Авангард<span class="header-second__menu-btn"></span></a>
                       
                         <ul data-simplebar2 class="header-second__drop-list" id="myEl3">
                             <li class="header-second__drop-list-item" tabindex="0">Пикассо</li>
@@ -117,7 +117,7 @@
                          
                     </li>
                     <li class="header-second__menu-list">
-                        <a class="header-second__menu-link" href="javascript:void(0);">Футуризм<span class="header-second__menu-btn"></span></a>
+                        <a class="header-second__btn" href="javascript:void(0);">Футуризм<span class="header-second__menu-btn"></span></a>
                        
                         <ul data-simplebar2 class="header-second__drop-list" id="myEl4">
                               <li class="header-second__drop-list-item" tabindex="0">Балла</li>
@@ -144,7 +144,7 @@
 <main>
     <section class="hero">
         <div class="container">
-            <h1 class="visually-hidden"></h1>
+            <h1 class="visually-hidden">Художественная галерея</h1>
             <h2 class="hero__title">Прикоснитесь к прекрасному</h2>
             <p class="hero__descriptions">Мы вынуждены отталкиваться от того, что реализация намеченных плановых
                 заданий создаёт предпосылки для новых предложений.</p>
@@ -178,7 +178,7 @@
         <div class="container gallery_container">
             <div class="gallery__block">
                 <h2 class="gallery__title"><a id="gallery"></a>Галерея</h2>
-                <fieldset class="gallery__filtr">Фильтровать по:</fieldset>
+                <div class="gallery__filtr">Фильтровать по:</div>
                 <div class="gallery__select">
                     <select name="select" id="selectCustom">
                         <option value="" class="gallery__select-option">Автор</option>
@@ -250,11 +250,11 @@
                     <a id="catalog"></a>Каталог
                 </h2>
                 <div class="catalog__flag">
-                    <button class="catalog__flag-tab" data-path="1"><img src="img/im4.png" alt="флаг" class="catalog-img_flag-tab_fl"></button>
-                    <button class="catalog__flag-tab" data-path="2"><img src="img/im6.png" alt="флаг" class="catalog-img_flag-tab_fl"></button>
-                    <button class="catalog__flag-tab" data-path="3"><img src="img/im7.png" alt="флаг" class="catalog-img_flag-tab_fl"></button>
-                    <button class="catalog__flag-tab" data-path="4"><img src="img/im8.png" alt="флаг" class="catalog-img_flag-tab_fl"></button>
-                    <button class="catalog__flag-tab" data-path="5"><img src="img/im5.png" alt="флаг" class="catalog-img_flag-tab_fl"></button>
+                    <button class="catalog__flag-tab" data-path="1"><img src="img/im4.png" alt="флаг" class="catalog__flag-tab_fl"></button>
+                    <button class="catalog__flag-tab" data-path="2"><img src="img/im6.png" alt="флаг" class="catalog__flag-tab_fl"></button>
+                    <button class="catalog__flag-tab" data-path="3"><img src="img/im7.png" alt="флаг" class="catalog__flag-tab_fl"></button>
+                    <button class="catalog__flag-tab" data-path="4"><img src="img/im8.png" alt="флаг" class="catalog__flag-tab_fl"></button>
+                    <button class="catalog__flag-tab" data-path="5"><img src="img/im5.png" alt="флаг" class="catalog__flag-tab_fl"></button>
 
                 </div>
             </div>
@@ -280,7 +280,7 @@
                         </p>
                         </div>
             <div class="tab-content tab-content-active" data-target="4">
-            <p class="catalog__text">
+            <p class="catalog__text-history">
                 Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского
                 типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали.
                 Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство,
@@ -296,13 +296,13 @@
                 </p>
                 </div>
             <div class="catalog__history">
-                <div class="catalog-history_block">
-                    <div class="catalog-history_block-img"><img src="img/im3.jpg" name="artist_img" class="catalog-history_artist_img"></div>
+                <div class="catalog__block">
+                    <div class="catalog__block-img"><img src="img/im3.jpg" alt="artist_img" class="catalog__artist_img"></div>
 
-                    <h3 class="catalog-history-title">Доменико Гирландайо</h3>
-                    <p class="catalog-history-data">2 июня 1448 — 11 января 1494.</p>
+                    <h3 class="catalog__title-artist">Доменико Гирландайо</h3>
+                    <p class="catalog__data">2 июня 1448 — 11 января 1494.</p>
                     
-                    <p class="catalog-history-text">
+                    <p class="catalog__text">
 
                         Один из ведущих флорентийских художников Кватроченто, основатель художественной династии,
                         которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный
@@ -312,13 +312,13 @@
                     </p>
                 </div>
 
-                <div id="accordion" class="catalog_accord-list">
-                    <div class="catalog_accord-item"><h3 class="catalog_accord-title" tabindex="0">C 1400 по 1499 гг.</h3><button class="catalog_accord-btn"
+                <div id="accordion" class="catalog__list">
+                    <div class="catalog__list-item"><h3 class="catalog__accord-title" tabindex="0">C 1400 по 1499 гг.</h3><button class="catalog__accord-btn"
                         aria-label="развернуть ссылку"></button></div>
 
-                    <div class="catalog_accord-description">
+                    <div class="catalog__description">
                         
-                        <p class="catalog_accord-text">
+                        <p class="catalog__accord-text">
                             <a href="javascript:l_image('img/Benedetto.jpg')" class="artist">Бенедетто ди Биндо</a>
                             <a href="javascript:l_image('img/ambr.jpg')" class="artist">Бергоньоне, Амброджо</a>
                             <a href="javascript:l_image('img/bissolo.jpg')" class="artist">Биссоло, Франческо</a>
@@ -329,7 +329,7 @@
                             <a href="javascript:l_image('img/scale.jpg')" class="artist">Бреа, Людовико</a><br>
                             <a href="javascript:l_image('img/tuchy.jpg')" class="artist">Бьяджо д’Антонио Туччи</a>
                         </p>
-                        <p class="catalog_accord-text">
+                        <p class="catalog__accord-text">
                             <a href="javascript:l_image('img/vik.jpg')" class="artist">Веккьетта</a><br>
                             <a href="javascript:l_image('img/0131.jpg')" class="artist">Андреа Верроккьо</a>
                             <a href="javascript:l_image('img/im3.jpg')" class="artist">Доменико Гирландайо</a>
@@ -340,7 +340,7 @@
                             <a href="javascript:l_image('img/5547.jpg')" class="artist">Джованни ди Паоло</a>
                             <a href="javascript:l_image('img/14824.jpg')" class="artist">Джорджоне</a>
                         </p>
-                            <p class="catalog_accord-text"> 
+                            <p class="catalog__accord-text"> 
                             <a href="javascript:l_image('img/Bernardo.jpg')" class="artist">Парентино, Бернардо</a>
                             <a href="javascript:l_image('img/P139.jpg')" class="artist">Пезеллино</a><br>
                             <a href="javascript:l_image('img/Pietro.jpg')" class="artist">Пьетро Перуджино</a>
@@ -350,17 +350,47 @@
                             </p>
                        
                     </div>
-                    <div class="catalog_accord-item"><h3 class="catalog_accord-title" tabindex="0">C 1500 по 1599 гг.</h3><button class="catalog_accord-btn"
+                    <div class="catalog__list-item"><h3 class="catalog__accord-title" tabindex="0">C 1500 по 1599 гг.</h3><button class="catalog__accord-btn"
                             aria-label="развернуть ссылку"></button></div>
-                    <div class="catalog_accord-description">
-                        <p class="catalog_accord-text">
+                    <div class="catalog__description">
+                        <p class="catalog__accord-text">
                             Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
                             purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
                             velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
                             suscipit faucibus urna.
                         </p>
                     </div>
-                    <div class="catalog_accord-item"><h3 class="catalog_accord-title" tabindex="0">C 1600 по 1699 гг.</h3><button class="catalog_accord-btn"
+                    <div class="catalog__list-item"><h3 class="catalog__accord-title" tabindex="0">C 1600 по 1699 гг.</h3><button class="catalog__accord-btn"
+                    aria-label="развернуть ссылку"></button></div>
+                    <div class="catalog__description">
+                        <p class="catalog__accord-text">
+                            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                            suscipit faucibus urna.
+                        </p>
+                    </div>
+                    <div class="catalog__list-item"><h3 class="catalog__accord-title" tabindex="0">C 1700 по 1799 гг.</h3><button class="catalog__accord-btn"
+                    aria-label="развернуть ссылку"></button></div>
+                    <div class="catalog__description">
+                        <p class="catalog__accord-text">
+                            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                            suscipit faucibus urna.
+                        </p>
+                    </div>
+                    <div class="catalog__list-item"><h3 class="catalog__accord-title" tabindex="0">C 1800 по 1899 гг.</h3><button class="catalog__accord-btn"
+                    aria-label="развернуть ссылку"></button></div>
+                    <div class="catalog__description">
+                        <p class="catalog__accord-text">
+                            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                            suscipit faucibus urna.
+                        </p>
+                    </div>
+                    <div class="catalog__list-item"><h3 class="catalog__accord-title" tabindex="0">C 1900 по 1999 гг.</h3><button class="catalog__accord-btn"
                     aria-label="развернуть ссылку"></button></div>
                     <div class="catalog_accord-description">
                         <p class="catalog_accord-text">
@@ -370,40 +400,10 @@
                             suscipit faucibus urna.
                         </p>
                     </div>
-                    <div class="catalog_accord-item"><h3 class="catalog_accord-title" tabindex="0">C 1700 по 1799 гг.</h3><button class="catalog_accord-btn"
+                    <div class="catalog__list-item"><h3 class="catalog__accord-title" tabindex="0">C 2000 г.</h3><button class="catalog__accord-btn"
                     aria-label="развернуть ссылку"></button></div>
-                    <div class="catalog_accord-description">
-                        <p class="catalog_accord-text">
-                            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-                            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-                            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-                            suscipit faucibus urna.
-                        </p>
-                    </div>
-                    <div class="catalog_accord-item"><h3 class="catalog_accord-title" tabindex="0">C 1800 по 1899 гг.</h3><button class="catalog_accord-btn"
-                    aria-label="развернуть ссылку"></button></div>
-                    <div class="catalog_accord-description">
-                        <p class="catalog_accord-text">
-                            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-                            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-                            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-                            suscipit faucibus urna.
-                        </p>
-                    </div>
-                    <div class="catalog_accord-item"><h3 class="catalog_accord-title" tabindex="0">C 1900 по 1999 гг.</h3><button class="catalog_accord-btn"
-                    aria-label="развернуть ссылку"></button></div>
-                    <div class="catalog_accord-description">
-                        <p class="catalog_accord-text">
-                            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-                            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-                            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-                            suscipit faucibus urna.
-                        </p>
-                    </div>
-                    <div class="catalog_accord-item"><h3 class="catalog_accord-title" tabindex="0">C 2000 г.</h3><button class="catalog_accord-btn"
-                    aria-label="развернуть ссылку"></button></div>
-                    <div class="catalog_accord-description">
-                        <p class="catalog_accord-text">
+                    <div class="catalog__description">
+                        <p class="catalog__accord-text">
                             Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
                             purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
                             velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
@@ -417,79 +417,79 @@
     </section>
     <section class="event">
         <div class="container">
-            <h2 class="event-title"><a id="event"></a>События</h2>
-            <div class="event-block">
-                        <div class="event_book">
-                            <img src="img/101.jpg" alt="" class="event_book-img">
-                            <p class="event_book-item">Музей им. Щусева <br>
+            <h2 class="event__title"><a id="event"></a>События</h2>
+            <div class="event__block">
+                        <div class="event__book">
+                            <img src="img/101.jpg" alt="" class="event__book-img">
+                            <p class="event__book-item">Музей им. Щусева <br>
                                 с 20 марта по 30 апреля</p>
-                            <h3 class="event_book-titles">Книжная гравюра в живом восприятии</h3>
-                            <p class="event_book-text">
+                            <h3 class="event__book-titles">Книжная гравюра в живом восприятии</h3>
+                            <p class="event__book-text">
                                 Один из ведущих флорентийских художников Кватроченто, основатель художественной
                                 династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
                                 мастерской, где юный Микеланджело.
                             </p>
-                            <a href="/" class="event_book_text-btn">Подробнее</a>
+                            <a href="/" class="event__btn">Подробнее</a>
                         </div>
 
-                        <div class="event_book">
-                            <img src="img/102.jpg" alt="" class="event_book-img">
-                            <p class="event_book-item">ММОМА<br>
+                        <div class="event__book">
+                            <img src="img/102.jpg" alt="" class="event__book-img">
+                            <p class="event__book-item">ММОМА<br>
                                 24 марта 19:00</p>
-                            <h3 class="event_book-titles">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-                            <p class="event_book-text">
+                            <h3 class="event__book-titles">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                            <p class="event__book-text">
                                 Высокий уровень вовлечения представителей целевой аудитории является четким
                                 доказательством простого факта: постоянный количественный рост и сфера нашей
                                 активности представляет собой интересный эксперимент проверки новых принципов
                                 формирования...
                             </p>
-                            <a href="/" class="event_book_text-btn">Подробнее</a>
+                            <a href="/" class="event__btn">Подробнее</a>
                         </div>
-                        <div class="event_book">
-                            <img src="img/103.jpg" alt="" class="event_book-img">
-                            <p class="event_book-item">Еврейский музей<br>
+                        <div class="event__book">
+                            <img src="img/103.jpg" alt="" class="event__book-img">
+                            <p class="event__book-item">Еврейский музей<br>
                                 с 31 марта по 21 апреля</p>
-                            <h3 class="event_book-titles">Выставка «Формация 2020»</h3>
-                            <p class="event_book-text">
+                            <h3 class="event__book-titles">Выставка «Формация 2020»</h3>
+                            <p class="event__book-text">
                                 Идейные соображения высшего порядка, а также современная методология разработки
                                 играет важную роль в формировании глубокомысленных рассуждений. Также как
                                 перспективное планирование играет определяющее значение для новых принципов
                                 формирования материально-технической и кадровой базы.
                             </p>
-                            <a href="/" class="event_book_text-btn">Подробнее</a>
+                            <a href="/" class="event__btn">Подробнее</a>
                         </div>
             </div>  
             
            
-                <div id="spol" class="event_book-hide">
-                    <div class="event_book-hide-spoiler">
-                        <div class="event_book">
-                            <img src="img/104.jpg" alt="" class="event_book-img">
-                            <p class="event_book-item">Третьяковка на Крымском валу<br>
+                <div id="spol" class="event__book-hide">
+                    <div class="event__book-hide-spoiler">
+                        <div class="event__book">
+                            <img src="img/104.jpg" alt="" class="event__book-img">
+                            <p class="event__book-item">Третьяковка на Крымском валу<br>
                                 с 30 марта по 30 апреля</p>
-                            <h3 class="event_book-titles">XXIV Международная биеннале молодого искусства</h3>
-                            <p class="event_book-text">
+                            <h3 class="event__book-titles">XXIV Международная биеннале молодого искусства</h3>
+                            <p class="event__book-text">
                                 Внезапно, реплицированные с зарубежных источников, современные исследования
                                 представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и
                                 должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...
                             </p>
-                            <a href="/" class="event_book_text-btn">Подробнее</a>
+                            <a href="/" class="event__btn">Подробнее</a>
                         </div>
-                        <div class="event_book">
-                            <img src="img/105.jpg" alt="" class="event_book-img">
-                            <p class="event_book-item">ММАМ<br>
+                        <div class="event__book">
+                            <img src="img/105.jpg" alt="" class="event__book-img">
+                            <p class="event__book-item">ММАМ<br>
                                 с 8 апреля по 20 мая</p>
-                            <h3 class="event_book-titles">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-                            <p class="event_book-text">
+                            <h3 class="event__book-titles">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                            <p class="event__book-text">
                                 Один из ведущих флорентийских художников Кватроченто, основатель художественной
                                 династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
                                 мастерской, где юный Микеланджело.
                             </p>
-                            <a href="/" class="event_book_text-btn">Подробнее</a>
+                            <a href="/" class="event__btn">Подробнее</a>
                         </div>
                         </div>
             </div>
-            <div class="event-btn"><a onclick="$('#spol').slideToggle('slow');" href="javascript://"><span class="event-spoiler">Все события</span></a></div>
+            <div class="event__hide-btn"><a onclick="$('#spol').slideToggle('slow');" href="javascript://"><span class="event-spoiler">Все события</span></a></div>
         </div>
     </section>
     <section class="publish">
@@ -597,7 +597,7 @@
                                         class="card-price">620 руб</span></div>
                                 <span class="card-aftor">Иттен, Иоханнес </span>
 
-                                <button class="publish-block_btn"><h3 class="publish__title-btn" tabindex="0">Заказать</h3></button>
+                                <div class="publish-block_btn"><h3 class="publish__title-btn" tabindex="0">Заказать</h3></div>
                             </div>
                         </div>
                         <div class="swiper-slide card">
@@ -607,7 +607,7 @@
                                         class="card-price">2 450 руб</span></div>
                                 <span class="card-aftor">Рудер, Эмиль </span>
 
-                                <button class="publish-block_btn"><h3 class="publish__title-btn" tabindex="0">Заказать</h3></button>
+                                <div class="publish-block_btn"><h3 class="publish__title-btn" tabindex="0">Заказать</h3></div>
                             </div>
                         </div>
                         <div class="swiper-slide card">
@@ -617,7 +617,7 @@
                                         class="card-price">2 200 руб</span></div>
                                 <span class="card-aftor">Гордон, Юрий </span>
 
-                                <button class="publish-block_btn"><h3 class="publish__title-btn" tabindex="0">Заказать</h3></button>
+                                <div class="publish-block_btn"><h3 class="publish__title-btn" tabindex="0">Заказать</h3></div>
                             </div>
                         </div>
                         <div class="swiper-slide card">
@@ -627,7 +627,7 @@
                                     </span><span class="card-price">1 100 руб</span></div>
                                 <span class="card-aftor">Кричевский, Владимир </span>
 
-                                <button class="publish-block_btn"><h3 class="publish__title-btn" tabindex="0">Заказать</h3></button>
+                                <div class="publish-block_btn"><h3 class="publish__title-btn" tabindex="0">Заказать</h3></div>
                             </div>
                         </div>
                         <div class="swiper-slide card">
@@ -637,7 +637,7 @@
                                     </span><span class="card-price">1 450 руб</span></div>
                                 <span class="card-aftor">Мюллер-Брокманн, Йозеф </span>
 
-                                <button class="publish-block_btn"><h3 class="publish__title-btn" tabindex="0">Заказать</h3></button>
+                                <div class="publish-block_btn"><h3 class="publish__title-btn" tabindex="0">Заказать</h3></div>
                             </div>
                         </div>
                         <div class="swiper-slide scard">
@@ -647,7 +647,7 @@
                                     </span><span class="card-price">3 200 руб</span></div>
                                 <span class="card-aftor">Хеллер, Чваст </span>
 
-                                <button class="publish-block_btn"><h3 class="publish__title-btn" tabindex="0">Заказать</h3></button>
+                                <div class="publish-block_btn"><h3 class="publish__title-btn" tabindex="0">Заказать</h3></div>
                             </div>
                         </div>
                         <div class="swiper-slide card">
@@ -657,7 +657,7 @@
                                     </span><span class="card-price"> 2 200 руб</span></div>
                                 <span class="card-aftor">Арнхейм, Рудольф</span>
 
-                                <button class="publish-block_btn"><h3 class="publish__title-btn" tabindex="0">Заказать</h3></button>
+                                <div class="publish-block_btn"><h3 class="publish__title-btn" tabindex="0">Заказать</h3></div>
                             </div>
                         </div>
                     </div>

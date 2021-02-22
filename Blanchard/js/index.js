@@ -7,7 +7,7 @@ const slider3 = document.querySelector('.swiper-container3');
 const slider4 = document.querySelector('.swiper-container4');
 let mySwiper1 = new Swiper(slider1, {  
   slidesPerView: 3,
-  slidesPerGroup: 1,
+  slidesPerGroup: 3,
   spaceBetween: 50,
   keyboard: {
     enabled: true,
@@ -58,7 +58,7 @@ spaceBetween: 50
 })
   let mySwiper2 = new Swiper(slider2, {  
     slidesPerView: 3,
-        slidesPerGroup: 1,
+        slidesPerGroup: 3,
         spaceBetween: 50,
         keyboard: {
           enabled: true,
