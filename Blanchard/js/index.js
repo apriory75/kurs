@@ -252,7 +252,7 @@ myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)'
 
         im.mask(selector);
         
-        new JustValidate('.form', {
+        new JustValidate('.contacts__form', {
             rules: {
                name: {
                 required: true,
@@ -329,7 +329,7 @@ myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)'
         function l_image (a) {
           document.artist_img.src = a;
       }
-      document.addEventListener('DOMContentLoaded', function() {
+     
         document.querySelectorAll('.catalog__accord-text').forEach(function(accordTxt) {
           accordTxt.addEventListener('click', function(event) {
             const path = event.currentTarget.dataset.path
@@ -338,8 +338,8 @@ myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)'
             })
             document.querySelector(`[data-target="${path}"]`).classList.add('artist_active')
           })
-        })
-                  });
+        
+       });
       // Бургер меню
       document.querySelector('#burger').addEventListener('click', function(){
         document.querySelector('#menu').classList.toggle('is-active')

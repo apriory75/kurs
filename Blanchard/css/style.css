@@ -457,7 +457,7 @@ input[type="search"]::placeholder {
     }
     .hero__first-btn:hover {
         border: 3px solid #7943A4;
-       
+        color: #ffffff;
     }
     .hero__first-btn:active {
         background: #7943A4;
