@@ -193,26 +193,12 @@ spaceBetween: 50
   // accordion
   $( function() {
     $( "#accordion" ).accordion({
-        active: true,
-      collapsible: true,
-      heightStyle: "content"
+      collapsible: true
     });
-    $( ".selector" ).accordion( "refresh" );
   } );
-  $( ".selector" ).accordion({
-classes: {
-"ui-accordion": "highlight"
-}
-});
-var themeClass = $( ".selector" ).accordion( "option", "classes.ui-accordion" );
-
-// Setter
-$( ".selector" ).accordion( "option", "classes.ui-accordion", "highlight" );
-  $( ".selector" ).accordion({
-  create: function( event, ui ) {}
-});
+  $( ".ui-accordion-header" ).accordion( "refresh" );
 // yandex maps
-$( ".selector" ).on( "accordioncreate", function( event, ui ) {} );
+
     // Функция ymaps.ready() будет вызвана, когда
         // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
         ymaps.ready(init);
@@ -339,9 +325,22 @@ myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)'
             return false;
           });
         });
+        // художники
         function l_image (a) {
           document.artist_img.src = a;
       }
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.catalog__accord-text').forEach(function(accordTxt) {
+          accordTxt.addEventListener('click', function(event) {
+            const path = event.currentTarget.dataset.path
+            document.querySelectorAll('.artist').forEach(function(tabArtist) {
+              tabArtist.classList.remove('artist_active')
+            })
+            document.querySelector(`[data-target="${path}"]`).classList.add('artist_active')
+          })
+        })
+                  });
+      // Бургер меню
       document.querySelector('#burger').addEventListener('click', function(){
         document.querySelector('#menu').classList.toggle('is-active')
    
